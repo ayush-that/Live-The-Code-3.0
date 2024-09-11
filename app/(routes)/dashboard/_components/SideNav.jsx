@@ -71,7 +71,7 @@ function SideNav() {
         /> */}
       <div className="flex flex-row items-center">
         <Image src={'./chart-donut.svg'} alt="logo" width={40} height={25} />
-        <span className="text-xl font-bold text-blue-800">FinanSmart</span>
+        <span className="text-xl font-bold text-blue-800">Koober</span>
       </div>
       <div className="mt-5">
         {menuList.map((menu, index) => (

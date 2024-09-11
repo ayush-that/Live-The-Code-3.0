@@ -63,7 +63,7 @@ function CardInfo({ budgetList, incomeList }) {
           <div className="-mb-1 mt-4 flex items-center justify-between rounded-2xl border p-7">
             <div className="">
               <div className="mb-2 flex flex-row items-center space-x-1">
-                <h2 className="text-md">Finan Smart AI</h2>
+                <h2 className="text-md">Koober AI</h2>
                 <Sparkles className="background-animate h-10 w-10 rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-2 text-white" />
               </div>
               <h2 className="text-md font-light">

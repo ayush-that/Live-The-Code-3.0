@@ -10,7 +10,7 @@ function Header() {
     <div className="flex items-center justify-between border p-5 shadow-sm">
       <div className="flex flex-row items-center">
         <Image src={'/chart-donut.svg'} alt="logo" width={40} height={25} />
-        <span className="text-xl font-bold text-blue-800">FinanSmart</span>
+        <span className="text-xl font-bold text-blue-800">Koober</span>
       </div>
       {isSignedIn ? (
         <UserButton />

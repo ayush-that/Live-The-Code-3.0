@@ -9,10 +9,10 @@ const getFinancialAdvice = async (totalBudget, totalIncome, totalSpend) => {
 
     const prompt = `
       Based on the following financial data:
-      - Total Budget: ${totalBudget} USD 
-      - Expenses: ${totalSpend} USD 
-      - Incomes: ${totalIncome} USD
-      Provide detailed financial advice in 2 sentences to help the user manage their finances more effectively.
+      - The total buget I have prepared is ${totalBudget} USD 
+      - Out of this allocated budget I have spent ${totalSpend} USD 
+      - My total income is ${totalIncome} USD
+      Provide me financial advice in 4 sentences to help me manage my finances more effectively.
     `;
 
     const result = await model.generateContent(prompt);
