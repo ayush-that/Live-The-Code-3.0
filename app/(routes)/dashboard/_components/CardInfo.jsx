@@ -102,7 +102,7 @@ function CardInfo({ budgetList, incomeList }) {
               <div>
                 <h2 className="text-sm">Sum of Income Streams</h2>
                 <h2 className="text-2xl font-bold">
-                  ${formatNumber(totalIncome)}
+                  ${formatNumber(incomeList[0]?.totalAmount || 0)}
                 </h2>
               </div>
               <CircleDollarSign className="h-12 w-12 rounded-full bg-blue-800 p-3 text-white" />

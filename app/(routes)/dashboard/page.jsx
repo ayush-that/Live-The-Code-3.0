@@ -47,13 +47,12 @@ function Dashboard() {
     try {
       const result = await db
         .select({
-          ...getTableColumns(Incomes),
           totalAmount: sql`SUM(CAST(${Incomes.amount} AS NUMERIC))`.mapWith(
             Number
           ),
         })
         .from(Incomes)
-        .groupBy(Incomes.id); // Assuming you want to group by ID or any other relevant column
+        .where(eq(Incomes.createdBy, user?.primaryEmailAddress?.emailAddress));
 
       setIncomeList(result);
     } catch (error) {

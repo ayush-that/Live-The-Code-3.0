@@ -17,11 +17,6 @@ function Header() {
       ) : (
         <div className="flex items-center gap-3">
           <Link href={'/dashboard'}>
-            <Button variant="outline" className="rounded-full">
-              Dashboard
-            </Button>
-          </Link>
-          <Link href={'/sign-in'}>
             <Button className="rounded-full">Get Started</Button>
           </Link>
         </div>
