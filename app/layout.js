@@ -9,8 +9,11 @@ const outfit = Poppins({
 });
 
 export const metadata = {
-  title: 'Koober',
+  title: 'Koober: Your Pocket Finance Advisor',
   description: 'AI-Driven Personal Finance Advisor',
+  icons: {
+    icon: '/public/chart-donut.svg',
+  },
 };
 
 export default function RootLayout({ children }) {
